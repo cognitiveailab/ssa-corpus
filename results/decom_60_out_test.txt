@@ -1,0 +1,118 @@
+01/04/2022 00:53:36 - INFO - __main__ -   device: cuda n_gpu: 1, distributed training: False, 16-bits training: False
+01/04/2022 00:53:37 - INFO - pytorch_transformers.tokenization_utils -   loading file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-cased-vocab.txt from cache at /home/peter/.cache/torch/pytorch_transformers/5e8a2b4893d13790ed4150ca1906be5f7a03d6c4ddf62296c383f6db42814db2.e13dbb970cb325137104fb2e5f36fe865f27746c6b526f6352861b1980eb80b1
+01/04/2022 00:53:37 - INFO - pytorch_transformers.modeling_utils -   loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-cased-config.json from cache at /home/peter/.cache/torch/pytorch_transformers/b945b69218e98b3e2c95acf911789741307dec43c698d35fad11c1ae28bda352.9da767be51e1327499df13488672789394e2ca38b877837e52618a67d7002391
+01/04/2022 00:53:37 - INFO - pytorch_transformers.modeling_utils -   Model config {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": "ner",
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 22,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "pad_token_id": 0,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "vocab_size": 28996
+}
+
+01/04/2022 00:53:37 - INFO - pytorch_transformers.modeling_utils -   loading weights file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-cased-pytorch_model.bin from cache at /home/peter/.cache/torch/pytorch_transformers/35d8b9d36faaf46728a0192d82bf7d00137490cd6074e8500778afed552a67e5.3fadbea36527ae472139fe84cddaa65454d7429f12d543d80bfc3ad70de55ac2
+01/04/2022 00:53:39 - INFO - pytorch_transformers.modeling_utils -   Weights of Ner not initialized from pretrained model: ['classifier.weight', 'classifier.bias']
+01/04/2022 00:53:39 - INFO - pytorch_transformers.modeling_utils -   Weights from pretrained model not used in Ner: ['cls.predictions.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.dense.bias', 'cls.predictions.decoder.weight', 'cls.seq_relationship.weight', 'cls.seq_relationship.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.LayerNorm.bias']
+01/04/2022 00:53:41 - INFO - pytorch_transformers.modeling_utils -   loading configuration file out_decom/60_epoch/config.json
+01/04/2022 00:53:41 - INFO - pytorch_transformers.modeling_utils -   Model config {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": "ner",
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 22,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "pad_token_id": 0,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "vocab_size": 28996
+}
+
+01/04/2022 00:53:41 - INFO - pytorch_transformers.modeling_utils -   loading weights file out_decom/60_epoch/pytorch_model.bin
+01/04/2022 00:53:42 - INFO - pytorch_transformers.tokenization_utils -   Model name 'out_decom/60_epoch' not found in model shortcut name list (bert-base-uncased, bert-large-uncased, bert-base-cased, bert-large-cased, bert-base-multilingual-uncased, bert-base-multilingual-cased, bert-base-chinese, bert-base-german-cased, bert-large-uncased-whole-word-masking, bert-large-cased-whole-word-masking, bert-large-uncased-whole-word-masking-finetuned-squad, bert-large-cased-whole-word-masking-finetuned-squad, bert-base-cased-finetuned-mrpc). Assuming 'out_decom/60_epoch' is a path or url to a directory containing tokenizer files.
+01/04/2022 00:53:42 - INFO - pytorch_transformers.tokenization_utils -   loading file out_decom/60_epoch/vocab.txt
+01/04/2022 00:53:42 - INFO - pytorch_transformers.tokenization_utils -   loading file out_decom/60_epoch/added_tokens.json
+01/04/2022 00:53:42 - INFO - pytorch_transformers.tokenization_utils -   loading file out_decom/60_epoch/special_tokens_map.json
+01/04/2022 00:53:42 - INFO - pytorch_transformers.tokenization_utils -   loading file out_decom/60_epoch/tokenizer_config.json
+01/04/2022 00:53:42 - INFO - __main__ -   *** Example ***
+01/04/2022 00:53:42 - INFO - __main__ -   guid: test-0
+01/04/2022 00:53:42 - INFO - __main__ -   tokens: The new satellite , scheduled to launch Feb . 11 , will take the place of the Lands ##at 5 satellite , which is to be decommissioned in the coming months , the U . S . Geological Survey reported in December .
+01/04/2022 00:53:42 - INFO - __main__ -   input_ids: 101 1109 1207 5989 117 4533 1106 4286 13650 119 1429 117 1209 1321 1103 1282 1104 1103 17854 2980 126 5989 117 1134 1110 1106 1129 15440 1107 1103 1909 1808 117 1103 158 119 156 119 14802 8157 2103 1107 1382 119 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+01/04/2022 00:53:42 - INFO - __main__ -   input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+01/04/2022 00:53:42 - INFO - __main__ -   segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+01/04/2022 00:53:42 - INFO - __main__ -   *** Example ***
+01/04/2022 00:53:42 - INFO - __main__ -   guid: test-1
+01/04/2022 00:53:42 - INFO - __main__ -   tokens: U ##AR ##S was officially decommissioned on December 14 , 2005 and its functions replaced by NASA ' s E ##OS Au ##ra and S ##OR ##CE .
+01/04/2022 00:53:42 - INFO - __main__ -   input_ids: 101 158 12426 1708 1108 3184 15440 1113 1382 1489 117 1478 1105 1157 4226 2125 1118 9085 112 188 142 9025 27758 1611 1105 156 9565 10954 119 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+01/04/2022 00:53:42 - INFO - __main__ -   input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+01/04/2022 00:53:42 - INFO - __main__ -   segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+01/04/2022 00:53:42 - INFO - __main__ -   *** Example ***
+01/04/2022 00:53:42 - INFO - __main__ -   guid: test-2
+01/04/2022 00:53:42 - INFO - __main__ -   tokens: GO ##ES - 1 remained active throughout the launches of GO ##ES - 2 - 6 , until finally being decommissioned on March 7 , 1985 .
+01/04/2022 00:53:42 - INFO - __main__ -   input_ids: 101 27157 9919 118 122 1915 2327 2032 1103 21285 1104 27157 9919 118 123 118 127 117 1235 1921 1217 15440 1113 1345 128 117 2210 119 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+01/04/2022 00:53:42 - INFO - __main__ -   input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+01/04/2022 00:53:42 - INFO - __main__ -   segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+01/04/2022 00:53:42 - INFO - __main__ -   *** Example ***
+01/04/2022 00:53:42 - INFO - __main__ -   guid: test-3
+01/04/2022 00:53:42 - INFO - __main__ -   tokens: The director general , who did not disc ##lose the specific time for de ##com ##mission ##ing Nigeria ##S ##at - 1 and the takeoff of commercial activities for the Nigeria ##S ##at - 2 , cited security reasons as why he could not di ##vu ##lge the information .
+01/04/2022 00:53:42 - INFO - __main__ -   input_ids: 101 1109 1900 1704 117 1150 1225 1136 6187 20316 1103 2747 1159 1111 1260 8178 11234 1158 6860 1708 2980 118 122 1105 1103 22149 1104 2595 2619 1111 1103 6860 1708 2980 118 123 117 6024 2699 3672 1112 1725 1119 1180 1136 4267 25247 21463 1103 1869 119 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+01/04/2022 00:53:42 - INFO - __main__ -   input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+01/04/2022 00:53:42 - INFO - __main__ -   segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+01/04/2022 00:53:42 - INFO - __main__ -   *** Example ***
+01/04/2022 00:53:42 - INFO - __main__ -   guid: test-4
+01/04/2022 00:53:42 - INFO - __main__ -   tokens: Director - general of the National Space Research and Development Agency ( NAS ##RD ##A ) Mohammed Se ##id ##u disclosed this on Friday in Abu ##ja , adding that Nigeria ' s first satellite in orbit Nigeria ##S ##at - 1 is to be decommissioned soon .
+01/04/2022 00:53:42 - INFO - __main__ -   input_ids: 101 2524 118 1704 1104 1103 1305 4525 2713 1105 3273 5571 113 25165 23354 1592 114 12811 22087 2386 1358 23617 1142 1113 5286 1107 8158 3174 117 5321 1115 6860 112 188 1148 5989 1107 8895 6860 1708 2980 118 122 1110 1106 1129 15440 1770 119 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+01/04/2022 00:53:42 - INFO - __main__ -   input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+01/04/2022 00:53:42 - INFO - __main__ -   segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+01/04/2022 00:53:42 - INFO - __main__ -   ***** Running evaluation *****
+01/04/2022 00:53:42 - INFO - __main__ -     Num examples = 17
+01/04/2022 00:53:42 - INFO - __main__ -     Batch size = 8
+Evaluating:   0%|          | 0/3 [00:00<?, ?it/s]Evaluating:  67%|██████▋   | 2/3 [00:00<00:00, 13.79it/s]Evaluating: 100%|██████████| 3/3 [00:00<00:00, 19.31it/s]
+01/04/2022 00:53:43 - INFO - __main__ -   
+             precision    recall  f1-score   support
+
+  Satellite     0.4444    0.6667    0.5333        18
+       Date     0.5833    0.7778    0.6667         9
+        Org     0.2222    0.4000    0.2857         5
+
+avg / total     0.4488    0.6562    0.5321        32
+
+01/04/2022 00:53:43 - INFO - __main__ -   ***** Eval results *****
+01/04/2022 00:53:43 - INFO - __main__ -   
+             precision    recall  f1-score   support
+
+  Satellite     0.4444    0.6667    0.5333        18
+       Date     0.5833    0.7778    0.6667         9
+        Org     0.2222    0.4000    0.2857         5
+
+avg / total     0.4488    0.6562    0.5321        32
+

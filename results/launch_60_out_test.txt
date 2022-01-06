@@ -1,0 +1,124 @@
+01/04/2022 01:19:12 - INFO - __main__ -   device: cuda n_gpu: 1, distributed training: False, 16-bits training: False
+01/04/2022 01:19:12 - INFO - pytorch_transformers.tokenization_utils -   loading file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-cased-vocab.txt from cache at /home/peter/.cache/torch/pytorch_transformers/5e8a2b4893d13790ed4150ca1906be5f7a03d6c4ddf62296c383f6db42814db2.e13dbb970cb325137104fb2e5f36fe865f27746c6b526f6352861b1980eb80b1
+01/04/2022 01:19:13 - INFO - pytorch_transformers.modeling_utils -   loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-cased-config.json from cache at /home/peter/.cache/torch/pytorch_transformers/b945b69218e98b3e2c95acf911789741307dec43c698d35fad11c1ae28bda352.9da767be51e1327499df13488672789394e2ca38b877837e52618a67d7002391
+01/04/2022 01:19:13 - INFO - pytorch_transformers.modeling_utils -   Model config {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": "ner",
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 22,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "pad_token_id": 0,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "vocab_size": 28996
+}
+
+01/04/2022 01:19:13 - INFO - pytorch_transformers.modeling_utils -   loading weights file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-cased-pytorch_model.bin from cache at /home/peter/.cache/torch/pytorch_transformers/35d8b9d36faaf46728a0192d82bf7d00137490cd6074e8500778afed552a67e5.3fadbea36527ae472139fe84cddaa65454d7429f12d543d80bfc3ad70de55ac2
+01/04/2022 01:19:15 - INFO - pytorch_transformers.modeling_utils -   Weights of Ner not initialized from pretrained model: ['classifier.weight', 'classifier.bias']
+01/04/2022 01:19:15 - INFO - pytorch_transformers.modeling_utils -   Weights from pretrained model not used in Ner: ['cls.predictions.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.dense.bias', 'cls.predictions.decoder.weight', 'cls.seq_relationship.weight', 'cls.seq_relationship.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.LayerNorm.bias']
+01/04/2022 01:19:17 - INFO - pytorch_transformers.modeling_utils -   loading configuration file out_launch/60_epoch/config.json
+01/04/2022 01:19:17 - INFO - pytorch_transformers.modeling_utils -   Model config {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": "ner",
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 22,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "pad_token_id": 0,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "vocab_size": 28996
+}
+
+01/04/2022 01:19:17 - INFO - pytorch_transformers.modeling_utils -   loading weights file out_launch/60_epoch/pytorch_model.bin
+01/04/2022 01:19:18 - INFO - pytorch_transformers.tokenization_utils -   Model name 'out_launch/60_epoch' not found in model shortcut name list (bert-base-uncased, bert-large-uncased, bert-base-cased, bert-large-cased, bert-base-multilingual-uncased, bert-base-multilingual-cased, bert-base-chinese, bert-base-german-cased, bert-large-uncased-whole-word-masking, bert-large-cased-whole-word-masking, bert-large-uncased-whole-word-masking-finetuned-squad, bert-large-cased-whole-word-masking-finetuned-squad, bert-base-cased-finetuned-mrpc). Assuming 'out_launch/60_epoch' is a path or url to a directory containing tokenizer files.
+01/04/2022 01:19:18 - INFO - pytorch_transformers.tokenization_utils -   loading file out_launch/60_epoch/vocab.txt
+01/04/2022 01:19:18 - INFO - pytorch_transformers.tokenization_utils -   loading file out_launch/60_epoch/added_tokens.json
+01/04/2022 01:19:18 - INFO - pytorch_transformers.tokenization_utils -   loading file out_launch/60_epoch/special_tokens_map.json
+01/04/2022 01:19:18 - INFO - pytorch_transformers.tokenization_utils -   loading file out_launch/60_epoch/tokenizer_config.json
+01/04/2022 01:19:18 - INFO - __main__ -   *** Example ***
+01/04/2022 01:19:18 - INFO - __main__ -   guid: test-0
+01/04/2022 01:19:18 - INFO - __main__ -   tokens: Bill ##ed as a disaster relief satellite , the Gao ##fen 4 was placed in G ##eo ##sy ##nch ##ron ##ous Or ##bit ( GE ##O ) .
+01/04/2022 01:19:18 - INFO - __main__ -   input_ids: 101 2617 1174 1112 170 7286 3893 5989 117 1103 20756 13488 125 1108 1973 1107 144 8209 5821 11273 3484 2285 2926 9208 113 25075 2346 114 119 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+01/04/2022 01:19:18 - INFO - __main__ -   input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+01/04/2022 01:19:18 - INFO - __main__ -   segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+01/04/2022 01:19:18 - INFO - __main__ -   *** Example ***
+01/04/2022 01:19:18 - INFO - __main__ -   guid: test-1
+01/04/2022 01:19:18 - INFO - __main__ -   tokens: N ##SS ##DC ##A / CO ##SP ##AR ID : 2011 - 06 ##8 ##B Des ##cription Shi ##yan 4 , a Chinese research satellite , was launched from Ji ##u ##qua ##n on 20 November 2011 at 00 : 15 U ##T by a Long March 2D rocket .
+01/04/2022 01:19:18 - INFO - __main__ -   input_ids: 101 151 12480 15556 1592 120 18732 15735 12426 10999 131 1349 118 5037 1604 2064 14177 27530 14104 6582 125 117 170 1922 1844 5989 117 1108 2536 1121 13997 1358 13284 1179 1113 1406 1379 1349 1120 3135 131 1405 158 1942 1118 170 3261 1345 22947 8964 119 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+01/04/2022 01:19:18 - INFO - __main__ -   input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+01/04/2022 01:19:18 - INFO - __main__ -   segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+01/04/2022 01:19:18 - INFO - __main__ -   *** Example ***
+01/04/2022 01:19:18 - INFO - __main__ -   guid: test-2
+01/04/2022 01:19:18 - INFO - __main__ -   tokens: The As ##tra 2 ##G Satellite should be launched in mid December and there should be an answer about which channels will be affected by these changes by March .
+01/04/2022 01:19:18 - INFO - __main__ -   input_ids: 101 1109 1249 4487 123 2349 16827 1431 1129 2536 1107 2286 1382 1105 1175 1431 1129 1126 2590 1164 1134 6412 1209 1129 4634 1118 1292 2607 1118 1345 119 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+01/04/2022 01:19:18 - INFO - __main__ -   input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+01/04/2022 01:19:18 - INFO - __main__ -   segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+01/04/2022 01:19:18 - INFO - __main__ -   *** Example ***
+01/04/2022 01:19:18 - INFO - __main__ -   guid: test-3
+01/04/2022 01:19:18 - INFO - __main__ -   tokens: A total of seven Arabs ##at satellites have been launched by Aria ##nes ##pace during the past 25 years .
+01/04/2022 01:19:18 - INFO - __main__ -   input_ids: 101 138 1703 1104 1978 15221 2980 16176 1138 1151 2536 1118 12900 3965 12204 1219 1103 1763 1512 1201 119 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+01/04/2022 01:19:18 - INFO - __main__ -   input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+01/04/2022 01:19:18 - INFO - __main__ -   segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+01/04/2022 01:19:18 - INFO - __main__ -   *** Example ***
+01/04/2022 01:19:18 - INFO - __main__ -   guid: test-4
+01/04/2022 01:19:18 - INFO - __main__ -   tokens: [ Watch the Aria ##ne 5 rocket launch two satellites into orbit ] The EU ##TE ##LS ##AT 8 West B satellite , here undergoing a vibration test , was launched toward orbit by an Aria ##ne 5 rocket on Aug . 20 .
+01/04/2022 01:19:18 - INFO - __main__ -   input_ids: 101 164 8553 1103 12900 1673 126 8964 4286 1160 16176 1154 8895 166 1109 7270 12880 15928 13821 129 1537 139 5989 117 1303 15819 170 20401 2774 117 1108 2536 1755 8895 1118 1126 12900 1673 126 8964 1113 16892 119 1406 119 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+01/04/2022 01:19:18 - INFO - __main__ -   input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+01/04/2022 01:19:18 - INFO - __main__ -   segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+01/04/2022 01:19:19 - INFO - __main__ -   ***** Running evaluation *****
+01/04/2022 01:19:19 - INFO - __main__ -     Num examples = 349
+01/04/2022 01:19:19 - INFO - __main__ -     Batch size = 8
+Evaluating:   0%|          | 0/44 [00:00<?, ?it/s]Evaluating:   5%|▍         | 2/44 [00:00<00:03, 13.88it/s]Evaluating:   9%|▉         | 4/44 [00:00<00:02, 15.25it/s]Evaluating:  16%|█▌        | 7/44 [00:00<00:02, 16.60it/s]Evaluating:  20%|██        | 9/44 [00:00<00:02, 17.33it/s]Evaluating:  27%|██▋       | 12/44 [00:00<00:01, 18.40it/s]Evaluating:  34%|███▍      | 15/44 [00:00<00:01, 19.27it/s]Evaluating:  41%|████      | 18/44 [00:00<00:01, 19.86it/s]Evaluating:  45%|████▌     | 20/44 [00:01<00:01, 19.75it/s]Evaluating:  52%|█████▏    | 23/44 [00:01<00:01, 20.25it/s]Evaluating:  59%|█████▉    | 26/44 [00:01<00:00, 20.57it/s]Evaluating:  66%|██████▌   | 29/44 [00:01<00:00, 20.37it/s]Evaluating:  73%|███████▎  | 32/44 [00:01<00:00, 20.67it/s]Evaluating:  80%|███████▉  | 35/44 [00:01<00:00, 20.89it/s]Evaluating:  86%|████████▋ | 38/44 [00:01<00:00, 21.08it/s]Evaluating:  93%|█████████▎| 41/44 [00:02<00:00, 20.71it/s]Evaluating: 100%|██████████| 44/44 [00:02<00:00, 21.65it/s]
+01/04/2022 01:19:21 - INFO - __main__ -   
+               precision    recall  f1-score   support
+
+    Satellite     0.8484    0.8902    0.8688       528
+         Date     0.8468    0.8863    0.8661       343
+          Org     0.7308    0.8482    0.7851       336
+   LaunchSite     0.8889    0.8759    0.8824       137
+LaunchVehicle     0.8571    0.9176    0.8864       170
+        Orbit     0.6889    0.8158    0.7470        38
+
+  avg / total     0.8232    0.8802    0.8502      1552
+
+01/04/2022 01:19:21 - INFO - __main__ -   ***** Eval results *****
+01/04/2022 01:19:21 - INFO - __main__ -   
+               precision    recall  f1-score   support
+
+    Satellite     0.8484    0.8902    0.8688       528
+         Date     0.8468    0.8863    0.8661       343
+          Org     0.7308    0.8482    0.7851       336
+   LaunchSite     0.8889    0.8759    0.8824       137
+LaunchVehicle     0.8571    0.9176    0.8864       170
+        Orbit     0.6889    0.8158    0.7470        38
+
+  avg / total     0.8232    0.8802    0.8502      1552
+

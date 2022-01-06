@@ -1,0 +1,122 @@
+01/04/2022 01:03:06 - INFO - __main__ -   device: cuda n_gpu: 1, distributed training: False, 16-bits training: False
+01/04/2022 01:03:06 - INFO - pytorch_transformers.tokenization_utils -   loading file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-cased-vocab.txt from cache at /home/peter/.cache/torch/pytorch_transformers/5e8a2b4893d13790ed4150ca1906be5f7a03d6c4ddf62296c383f6db42814db2.e13dbb970cb325137104fb2e5f36fe865f27746c6b526f6352861b1980eb80b1
+01/04/2022 01:03:07 - INFO - pytorch_transformers.modeling_utils -   loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-cased-config.json from cache at /home/peter/.cache/torch/pytorch_transformers/b945b69218e98b3e2c95acf911789741307dec43c698d35fad11c1ae28bda352.9da767be51e1327499df13488672789394e2ca38b877837e52618a67d7002391
+01/04/2022 01:03:07 - INFO - pytorch_transformers.modeling_utils -   Model config {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": "ner",
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 22,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "pad_token_id": 0,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "vocab_size": 28996
+}
+
+01/04/2022 01:03:07 - INFO - pytorch_transformers.modeling_utils -   loading weights file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-cased-pytorch_model.bin from cache at /home/peter/.cache/torch/pytorch_transformers/35d8b9d36faaf46728a0192d82bf7d00137490cd6074e8500778afed552a67e5.3fadbea36527ae472139fe84cddaa65454d7429f12d543d80bfc3ad70de55ac2
+01/04/2022 01:03:08 - INFO - pytorch_transformers.modeling_utils -   Weights of Ner not initialized from pretrained model: ['classifier.weight', 'classifier.bias']
+01/04/2022 01:03:08 - INFO - pytorch_transformers.modeling_utils -   Weights from pretrained model not used in Ner: ['cls.predictions.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.dense.bias', 'cls.predictions.decoder.weight', 'cls.seq_relationship.weight', 'cls.seq_relationship.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.LayerNorm.bias']
+01/04/2022 01:03:10 - INFO - pytorch_transformers.modeling_utils -   loading configuration file out_failure/60_epoch/config.json
+01/04/2022 01:03:10 - INFO - pytorch_transformers.modeling_utils -   Model config {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": "ner",
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 22,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "pad_token_id": 0,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "vocab_size": 28996
+}
+
+01/04/2022 01:03:10 - INFO - pytorch_transformers.modeling_utils -   loading weights file out_failure/60_epoch/pytorch_model.bin
+01/04/2022 01:03:12 - INFO - pytorch_transformers.tokenization_utils -   Model name 'out_failure/60_epoch' not found in model shortcut name list (bert-base-uncased, bert-large-uncased, bert-base-cased, bert-large-cased, bert-base-multilingual-uncased, bert-base-multilingual-cased, bert-base-chinese, bert-base-german-cased, bert-large-uncased-whole-word-masking, bert-large-cased-whole-word-masking, bert-large-uncased-whole-word-masking-finetuned-squad, bert-large-cased-whole-word-masking-finetuned-squad, bert-base-cased-finetuned-mrpc). Assuming 'out_failure/60_epoch' is a path or url to a directory containing tokenizer files.
+01/04/2022 01:03:12 - INFO - pytorch_transformers.tokenization_utils -   loading file out_failure/60_epoch/vocab.txt
+01/04/2022 01:03:12 - INFO - pytorch_transformers.tokenization_utils -   loading file out_failure/60_epoch/added_tokens.json
+01/04/2022 01:03:12 - INFO - pytorch_transformers.tokenization_utils -   loading file out_failure/60_epoch/special_tokens_map.json
+01/04/2022 01:03:12 - INFO - pytorch_transformers.tokenization_utils -   loading file out_failure/60_epoch/tokenizer_config.json
+01/04/2022 01:03:12 - INFO - __main__ -   *** Example ***
+01/04/2022 01:03:12 - INFO - __main__ -   guid: test-0
+01/04/2022 01:03:12 - INFO - __main__ -   tokens: Afghan satellite project “ on verge of collapse ” By Chris Forrest ##er January 28 , 2016 Local reports suggest that Afghanistan ’ s Ministry of Communications has suffered alleged ne ##gli ##gence which has brought the country ’ s proposed Afghan ##sat - 1 to the “ br ##ink of collapse ” and threatens a loss of “ millions of dollars ” .
+01/04/2022 01:03:12 - INFO - __main__ -   input_ids: 101 13099 5989 1933 789 1113 18691 1104 7546 790 1650 2929 17367 1200 1356 1743 117 1446 5328 3756 5996 1115 6469 787 188 3424 1104 6345 1144 3421 6351 24928 23655 12329 1134 1144 1814 1103 1583 787 188 3000 13099 28027 118 122 1106 1103 789 9304 10223 1104 7546 790 1105 18241 170 2445 1104 789 9215 1104 5860 790 119 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+01/04/2022 01:03:12 - INFO - __main__ -   input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+01/04/2022 01:03:12 - INFO - __main__ -   segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+01/04/2022 01:03:12 - INFO - __main__ -   *** Example ***
+01/04/2022 01:03:12 - INFO - __main__ -   guid: test-1
+01/04/2022 01:03:12 - INFO - __main__ -   tokens: Space market faces $ 400 ##m ##n Me ##x ##S ##at - 1 loss 19 May 2015 The niche space ( re ) insurance market is facing one of its largest ##ever losses after the launch failure of a Russian - made Proto ##n - Mr ##ock ##et , carrying the Me ##x ##S ##at - 1 communications satellite .
+01/04/2022 01:03:12 - INFO - __main__ -   input_ids: 101 4525 2319 4876 109 3434 1306 1179 2508 1775 1708 2980 118 122 2445 1627 1318 1410 1109 20545 2000 113 1231 114 5986 2319 1110 4749 1141 1104 1157 2026 17791 6053 1170 1103 4286 4290 1104 170 1938 118 1189 22388 1179 118 1828 5559 2105 117 4004 1103 2508 1775 1708 2980 118 122 6678 5989 119 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+01/04/2022 01:03:12 - INFO - __main__ -   input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+01/04/2022 01:03:12 - INFO - __main__ -   segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+01/04/2022 01:03:12 - INFO - __main__ -   *** Example ***
+01/04/2022 01:03:12 - INFO - __main__ -   guid: test-2
+01/04/2022 01:03:12 - INFO - __main__ -   tokens: The previous failure of a Proto ##n - M rocket occurred in July 2013 .
+01/04/2022 01:03:12 - INFO - __main__ -   input_ids: 101 1109 2166 4290 1104 170 22388 1179 118 150 8964 3296 1107 1351 1381 119 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+01/04/2022 01:03:12 - INFO - __main__ -   input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+01/04/2022 01:03:12 - INFO - __main__ -   segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+01/04/2022 01:03:12 - INFO - __main__ -   *** Example ***
+01/04/2022 01:03:12 - INFO - __main__ -   guid: test-3
+01/04/2022 01:03:12 - INFO - __main__ -   tokens: AMC - 14 had been scheduled for launch late this year but has been delayed for about two months , to February , following the September failure of Russia ’ s Proto ##n rocket .
+01/04/2022 01:03:12 - INFO - __main__ -   input_ids: 101 24810 118 1489 1125 1151 4533 1111 4286 1523 1142 1214 1133 1144 1151 8088 1111 1164 1160 1808 117 1106 1428 117 1378 1103 1347 4290 1104 2733 787 188 22388 1179 8964 119 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+01/04/2022 01:03:12 - INFO - __main__ -   input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+01/04/2022 01:03:12 - INFO - __main__ -   segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+01/04/2022 01:03:12 - INFO - __main__ -   *** Example ***
+01/04/2022 01:03:12 - INFO - __main__ -   guid: test-4
+01/04/2022 01:03:12 - INFO - __main__ -   tokens: Credit : Lockheed Martin PA ##RI ##S — A U . S . Atlas 5 rocket on Oct . 2 successfully placed Mexico ’ s More ##los - 3 mobile communications satellite into g ##eo ##sta ##tion ##ary transfer orbit , a launch that will enable Mexico to deploy its Me ##x ##S ##at system despite the loss of an identical satellite in May ’ s failure of a Russian Proto ##n rocket .
+01/04/2022 01:03:12 - INFO - __main__ -   input_ids: 101 14032 131 18904 2405 8544 20595 1708 783 138 158 119 156 119 12974 126 8964 1113 14125 119 123 4358 1973 2470 787 188 3046 8867 118 124 5093 6678 5989 1154 176 8209 8419 2116 3113 4036 8895 117 170 4286 1115 1209 9396 2470 1106 23660 1157 2508 1775 1708 2980 1449 2693 1103 2445 1104 1126 6742 5989 1107 1318 787 188 4290 1104 170 1938 22388 1179 8964 119 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+01/04/2022 01:03:12 - INFO - __main__ -   input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+01/04/2022 01:03:12 - INFO - __main__ -   segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+01/04/2022 01:03:12 - INFO - __main__ -   ***** Running evaluation *****
+01/04/2022 01:03:12 - INFO - __main__ -     Num examples = 63
+01/04/2022 01:03:12 - INFO - __main__ -     Batch size = 8
+Evaluating:   0%|          | 0/8 [00:00<?, ?it/s]Evaluating:  25%|██▌       | 2/8 [00:00<00:00, 13.86it/s]Evaluating:  50%|█████     | 4/8 [00:00<00:00, 15.05it/s]Evaluating:  88%|████████▊ | 7/8 [00:00<00:00, 16.53it/s]Evaluating: 100%|██████████| 8/8 [00:00<00:00, 18.46it/s]
+01/04/2022 01:03:12 - INFO - __main__ -   
+               precision    recall  f1-score   support
+
+  FailureType     0.4853    0.6600    0.5593        50
+    Satellite     0.6866    0.8679    0.7667        53
+         Date     0.8049    0.8684    0.8354        38
+          Org     0.5385    0.6176    0.5753        34
+LaunchVehicle     0.8788    0.9355    0.9062        31
+
+  avg / total     0.6640    0.7864    0.7185       206
+
+01/04/2022 01:03:12 - INFO - __main__ -   ***** Eval results *****
+01/04/2022 01:03:12 - INFO - __main__ -   
+               precision    recall  f1-score   support
+
+  FailureType     0.4853    0.6600    0.5593        50
+    Satellite     0.6866    0.8679    0.7667        53
+         Date     0.8049    0.8684    0.8354        38
+          Org     0.5385    0.6176    0.5753        34
+LaunchVehicle     0.8788    0.9355    0.9062        31
+
+  avg / total     0.6640    0.7864    0.7185       206
+
